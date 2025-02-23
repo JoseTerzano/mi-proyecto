@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Regostro de Usuario</h1>
+        <form action="/procesar.php" method="post">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required autofocus>
+                </div><br>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required autofocus>
+                </div><br>
+                <div>
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div><br>
+                <div>
+                    <label>Genero:</label><br>
+                    <input type="radio" id="Masculino" name="genero" value="Masculino" required>
+                    <label for="Masculino">Masculino</label><br>
+                    <input type="radio" id="Femenino" name="genero" value="Femenino" required>
+                    <label for="Femenino">Femenino</label><br>
+                    <input type="radio" id="otro" name="genero" value="otro" required>
+                    <label for="otro">Otro</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información de Contacto</legend>
+                <div>
+                    <label for="correo">Correo Electronico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="example@mail.com" required><br>
+                </div><br>
+                <div>
+                    <label for="telefono">Numero Telefonico:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div><br>
+                    <label for="direccion">Dirección:</label><br>
+                    <textarea id="direccion" name="direccion"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>informacion de la Cuenta</legend>
+                <div>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" name="usuario" id="usuario" required><br>
+                </div><br>
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" required><br>
+                </div><br>
+                <div>
+                    <label for="confirmar-contraseña">confirmar-contraseña</label>
+                    <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" required><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <div>
+                    <label for="color">Color Favorito:</label>
+                    <select id="color" name="color">
+                        <option value="Rojo">Rojo</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Amarillo">Amarillo</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="aceptar-terminos">Acepto los Términos y Condiciones:</label>
+                    <input type="checkbox" id="aceptar-terminos" name="aceptar-terminos" required><br><br>
+                </div>
+            </fieldset>
+            <input type="submit" name="Registrar" id="Registrar" value="Registrar">
+        </form>
+    </body>
+</html>

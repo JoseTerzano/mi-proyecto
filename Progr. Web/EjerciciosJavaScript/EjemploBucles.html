@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Bucles</title>
+    <script src="mi_script.js"></script>
+</head>
+<body>
+    <h1>Ejempo de if, While, For, Switch en JavaScript</h1>
+    <p id="if_else"></p>
+    <p id="while"></p>
+    <p id="for"></p>
+    <p id="switch"></p>
+    <script>
+        var numero = 100;
+        if (numero > 10){
+            document.getElementById("if_else").innerHTML = "El numero es mayor que 10, y es el numero: " + numero;
+        } else {
+            document.getElementById("if_else").innerHTML = "El numero es menor que 10";
+        }
+        var numero2 = 1;
+        let resltadoWhile = "Numeros del 1 al 5: ";
+        while (numero2 <= 5){
+            resltadoWhile += numero2 + " ";
+            numero2++;
+        }
+        document.getElementById("while").innerHTML = resltadoWhile;
+
+        let resultadoFor = "Numeros del 1 al 5: ";
+        for (var i = 0; i < 5; i++){
+            resultadoFor += i+1 + " ";
+        }
+        document.getElementById("for").innerHTML = resultadoFor;
+
+        let dia = 3;
+        let nombreDia = "";
+        switch (dia){
+            case 1:
+                nombreDia = "Lunes";
+                break;
+            case 2:
+                nombreDia = "Martes";
+                break;
+            case 3:
+                nombreDia = "Miercoles";
+                break;
+            case 4:
+                nombreDia = "Jueves";
+                break;
+            case 5:
+                nombreDia = "Viernes";
+                break;
+            case 6:
+                nombreDia = "Sabado";
+                break;
+            case 7:
+                nombreDia = "Domingo";
+                break;
+            default:
+                nombreDia = "No es un dia valido";
+        }
+        document.getElementById("switch").innerHTML = "El dia es: " + nombreDia;
+    </script>
+</body>
+</html>

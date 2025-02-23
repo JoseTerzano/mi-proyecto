@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepposse Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            max-height: 400px; /* Ajusta este valor a la altura deseada */
+            width: 100%; /* Ajusta este valor a la anchura deseada */
+            object-fit: contain;  /* Mantiene la proporción de la imagen */
+        }
+        .search-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            border: None;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Encabezado -->
+    <nav class="navbar">
+        <ul class="nav-left">
+            <div class="logo">
+                <img src="imagenes/Deepposse_transparent-.png" alt="Deepposse Logo">
+            </div>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/remera4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/buzo3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/remera.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Buscador -->
+      <div class="search-container">
+        <form action="/buscar" method="GET">
+            <input type="text" placeholder="Buscar" name="query" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+
+    <!-- Productos -->
+    <section class="products-grid">
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/remera.jpg" alt="Remera"></a>
+            <p>remera overzise bordada</p>
+            <p><b>$30.000</b></p>
+        </div>
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/pantalon.jpg" alt="Pantalón"></a>
+            <p>pantalon baggy mom</p>
+            <p><b>$65.000</b></p>
+        </div>
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/buzo.jpg" alt="Buzo"></a>
+            <p>buzo bastard</p>
+            <p><b>$54.000</b></p>
+        </div>
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/campera.jpg" alt="Campera"></a>
+            <p>campera just fly</p>
+            <p><b>$49.000</b></p>
+        </div>
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/remera2.jpg" alt="Remera"></a>
+            <p>remera Make It Happen</p>
+            <p><b>$32.000</b></p>
+        </div>
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/pantalon2.jpg" alt="Pantalón"></a>
+            <p>pantalon carpintero baggy</p>
+            <p><b>$54.000</b></p>
+        </div>
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/buzo.jpg" alt="Buzo"></a>
+            <p>buzo soft washed</p>
+            <p><b>$51.000</b></p>
+        </div>
+        <div class="product-card">
+            <a href="pestana1.html"><img src="imagenes/remera3.jpg" alt="Campera"></a>
+            <p>remera forever bastard</p>
+            <p><b>$27.000</b></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="payment">
+            <h4>Medios de Pago</h4>
+            <p>Visa | MasterCard</p>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </footer>
+
+</body>
+</html>

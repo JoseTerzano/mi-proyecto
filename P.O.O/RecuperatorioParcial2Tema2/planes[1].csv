@@ -1,0 +1,12 @@
+tipo;compania;duracion;cobertura;precio;tipollama;minutos;nacional;internacional
+M;Movistar;24;Nacional;1500;locales;500;
+T;Cablevision;18;Nacional;1200;80;30
+T;DirecTV;24;Nacional e Internacional;1800;90;50
+M;Tuenti;6;Nacional;600;locales;200
+M;Telecom Personal;12;Nacional;850;locales;250
+T;Supercanal;6;Nacional;750;60;15
+M;Claro;18;Nacional e Internacional;1200;internacional;400
+T;Flow;6;Regional;800;65;18
+M;Personal;12;Nacional;900;larga distancia;300
+T;Telecentro;12;Regional;900;70;20
+T;Claro TV;24;Nacional;1400;80;35

@@ -1,0 +1,107 @@
+import numpy as np
+class PilaSecuencial:
+    __tope:int
+    __arreglo:np.ndarray
+
+    def __init__(self, n):
+        self.__tope = -1
+        self.__arreglo = np.empty(n,dtype=int)
+
+    def vacia(self):
+        return self.__tope == -1
+    
+    def getelemento(self):
+        if self.__arreglo[self.__tope] is None or self.__tope == -1:
+            return -1
+        return self.__arreglo[self.__tope]
+
+    def llena(self):
+        return self.__tope==len(self.__arreglo)-1
+
+    def insertar(self,item):
+        if self.llena() is False:
+            self.__tope+=1
+            self.__arreglo[self.__tope]=item
+        else:
+            print(f"No es posible insertar el elemento {item}. Pila llena")
+
+    def suprimir(self):
+        elemento=None
+        if self.vacia() is False:
+            elemento = self.__arreglo[self.__tope]
+            self.__tope -= 1
+        else:
+            print("No es posible eliminar elementos. La pila esta vacia")
+        return elemento
+
+    def recorrer(self):
+        i = self.__tope
+        if not self.vacia():
+            while i >= 0:
+                print(self.__arreglo[i])
+                i -= 1
+
+    def Iniciar(self, n):
+        while n != 0:
+            self.insertar(n)
+            n -= 1 
+    
+    def Ganar(self, n):
+        if self.__arreglo[self.__tope] == 1 and self.__tope == n-1:
+            return True
+        else:            
+            return False
+        
+    def VerificarJugada(self, p2, p3, jugadaOrigen, jugadaDestino):
+        if jugadaOrigen == 1:
+            if jugadaDestino == 2:
+                if self.getelemento() < p2.getelemento() or p2.getelemento() == -1:
+                    p2.insertar(self.suprimir())
+                else:
+                    print("No es posible")
+            elif jugadaDestino == 3:
+                if self.getelemento() < p3.getelemento() or p3.getelemento() == -1:
+                    p3.insertar(self.suprimir())
+                else:
+                    print("No es posible")
+        elif jugadaOrigen == 2:
+            if jugadaDestino == 1:
+                if self.getelemento() > p2.getelemento() or self.getelemento() == -1:
+                    self.insertar(p2.suprimir())
+                else:
+                    print("No es posible")
+            elif jugadaDestino == 3:
+                if p2.getelemento() < p3.getelemento() or p3.getelemento() == -1:
+                    p3.insertar(p2.suprimir())
+                else:
+                    print("No es posible")
+        elif jugadaOrigen == 3:
+            if jugadaDestino == 1:
+                if self.getelemento() > p3.getelemento() or self.getelemento() == -1:
+                    self.insertar(p3.suprimir())
+                else:
+                    print("No es posible")
+            elif jugadaDestino == 2:
+                if p2.getelemento() > p3.getelemento() or p2.getelemento() == -1:
+                    p2.insertar(p3.suprimir())
+                else:
+                    print("No es posible")
+
+if __name__=="__main__":
+    n = int(input("Ingresa el numero de elementos: "))
+    p1 = PilaSecuencial(n)
+    p2 = PilaSecuencial(n)
+    p3 = PilaSecuencial(n)
+    p1.Iniciar(n)
+    p1.recorrer()
+    while p3.Ganar(n) is False:
+        jugadaOrigen = int(input("Ingresa el numero de la jugada de origen: "))
+        jugadaDestino = int(input("Ingresa el numero de la jugada de destino: "))
+        p1.VerificarJugada(p2, p3, jugadaOrigen, jugadaDestino)
+        print("P1:")
+        p1.recorrer()
+        print("P2:")
+        p2.recorrer()
+        print("P3:")
+        p3.recorrer()
+    print("El jugador gana porque es re capooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo")
