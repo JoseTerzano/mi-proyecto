@@ -7,7 +7,7 @@ Este repositorio contiene todos los trabajos prácticos, proyectos y apuntes que
 
 ### 📂 Contenido del Repositorio  
 📌 **Año 2:**  
-- 🔹 [Materia 3 - Programacion Orientada a Objetos (P.O.O.](P.O.O)  
+- 🔹 [Materia 3 - Programacion Orientada a Objetos (P.O.O.)](P.O.O)  
 - 🔹 [Materia 4 - Nombre](./ruta/del/archivo)  
 
 📌 **Año 3:**  
