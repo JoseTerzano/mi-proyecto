@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto de Viaje</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Presupuesto de Viaje</legend>
+            <div id="div">
+                <label for="destino">Destino del Viaje:</label>
+                <input type="text" id="destino" name="destino"><br><br>
+                <label for="dias">Cantidad de Dias:</label>
+                <input type="number" id="dias" name="dias"><br><br>
+                <label for="presupuesto">Presupuesto:</label>
+                <input type="number" name="presupuesto" id="presupuesto"><br><br>
+                <label for="tipo">Tipo de Viaje:</label>
+                <select name="tipo" id="opciones">
+                    <option value="">--Seleccione--</option>
+                    <option value="Economico">Economico</option>
+                    <option value="Estandar">Estandar</option>
+                    <option value="Lujoso">Lujoso</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+    <button id="boton">Calcular</button>
+    <div id="colocar-parrafo">
+        <p id="respuesta"></p>
+    </div>
+</body>
+</html>

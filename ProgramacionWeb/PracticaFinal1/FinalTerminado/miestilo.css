@@ -1,0 +1,13 @@
+body{
+    background-color: aliceblue;
+}
+#boton{
+    background-color: black;
+    color: white;
+}
+*{
+    text-align: center;
+}
+#gol{
+    color: blue;
+}
