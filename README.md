@@ -7,22 +7,14 @@ Este repositorio contiene todos los trabajos prácticos, proyectos y apuntes que
 
 ### 📂 Contenido del Repositorio  
 📌 **Año 2:**  
-- 🔹 [Materia 3 - Programacion Orientada a Objetos (P.O.O.)](P.O.O)  
-- 🔹 [Materia 4 - Nombre](./ruta/del/archivo)  
-
-📌 **Año 3:**  
-- 🔹 [Materia 5 - Nombre](./ruta/del/archivo)  
-- 🔹 [Materia 6 - Nombre](./ruta/del/archivo)  
+- 🔹 [Programacion Orientada a Objetos (P.O.O.)](P.O.O)  
+- 🔹 [Estructura de Datos y Algoritmos](E.D.A)  
+- 🔹 [Programacion Web](Progr.Web) 
 
 ---
 
 ### ⚙️ Tecnologías y Herramientas  
-💻 **Lenguajes usados:** [Aquí puedes agregar los que usaste: Python, C, Java, etc.]  
-🛠️ **Herramientas:** Git, VS Code, GCC, etc.  
+💻 **Lenguajes usados:** Python, JS, HTML, CSS, etc.
+🛠️ **Herramientas:** Git, VS Code, etc.  
 
 ---
-
-### 🚀 ¿Cómo usar este repositorio?  
-1. Clona el repositorio con:  
-   ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repo.git
